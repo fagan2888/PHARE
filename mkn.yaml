@@ -1,0 +1,39 @@
+#! clean build -dtOg 0 -W 9
+
+name: phare
+scm: https://github.com/pharehub/phare
+self:
+  samrai
+  core
+  init
+
+profile:
+- name: init
+  inc: src/initializer
+  src: |
+       src/initializer, 0
+  dep: lang.pybind11
+       lpp.cppdict(https://github.com/dekken/lpp.cppdict)
+  mod: lang.python3
+  out: phare_initializer
+
+- name: core
+  self: init
+  inc: src/core
+  src: src/core
+  out: phare_core
+
+- name: samrai
+  self: core
+  inc: src/samrai_interface
+  src: src/samrai_interface
+  dep: llnl.samrai(https://github.com/dekken/llnl.samrai)
+  out: phare_samrai
+
+- name: test
+  self: samrai
+  inc: tests/samrai_interface/data/field/copy_pack
+  test: tests/(^.*single_main.cpp.*$)
+  dep: google.test
+  mod: lang.python3
+  link: $(python3-config --ldflags)
