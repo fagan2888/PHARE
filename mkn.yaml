@@ -9,11 +9,9 @@ self:
 
 profile:
 - name: init
-  inc: src/initializer
-  src: |
-       src/initializer, 0
+  inc: src/initializer subprojects
+  src: src/initializer, 0
   dep: lang.pybind11
-       lpp.cppdict(https://github.com/dekken/lpp.cppdict)
   mod: lang.python3
   out: phare_initializer
 
@@ -37,3 +35,4 @@ profile:
   dep: google.test
   mod: lang.python3
   link: $(python3-config --ldflags)
+  
