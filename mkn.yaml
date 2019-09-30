@@ -1,17 +1,14 @@
 #! clean build -dtOg 0 -W 9
 
 name: phare
-scm: https://github.com/pharehub/phare
-self:
-  samrai
-  core
-  init
+self: samrai
 
 profile:
 - name: init
-  inc: src/initializer subprojects
+  inc: src/initializer
+       subprojects
   src: src/initializer, 0
-  dep: lang.pybind11
+  dep: lang.pybind11 mkn.kul
   mod: lang.python3
   out: phare_initializer
 
@@ -23,16 +20,37 @@ profile:
 
 - name: samrai
   self: core
-  inc: src/samrai_interface
-  src: src/samrai_interface
+  inc: src/amr
+  src: src/amr
   dep: llnl.samrai(https://github.com/dekken/llnl.samrai)
-  out: phare_samrai
+  out: phare_amr
+
+- name: solver
+  self: samrai
+  inc: src/solver
+  src: src/solver
+  out: phare_solver
 
 - name: test
   self: samrai
-  inc: tests/samrai_interface/data/field/copy_pack
-  test: tests/(^.*single_main.cpp.*$)
+  inc: tests/amr/data/field/copy_pack
+  src: tests
   dep: google.test
   mod: lang.python3
   link: $(python3-config --ldflags)
-  
+
+- name: diagnostic
+  self: solver samrai
+  inc: src/diagnostic
+       subprojects/highfive/include
+       /usr/include/hdf5/serial
+  # src: src/diagnostic
+  out: phare_diagnostic
+
+- name: diagnostic_test
+  self: diagnostic
+  inc: tests
+  dep: google.test
+  test: tests/diagnostic/(\w).cpp
+  lib: hdf5_serial
+  link: -pthread
