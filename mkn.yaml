@@ -1,56 +1,52 @@
 #! clean build -dtOg 0 -W 9
 
 name: phare
-self: samrai
+self: simulator pyphare
 
 profile:
 - name: init
-  inc: src/initializer
+  inc: src
        subprojects
-  src: src/initializer, 0
+  src: src/initializer/(.*_provider.*).cpp
   dep: lang.pybind11 mkn.kul
   mod: lang.python3
   out: phare_initializer
 
 - name: core
   self: init
-  inc: src/core
   src: src/core
   out: phare_core
 
 - name: samrai
   self: core
-  inc: src/amr
   src: src/amr
   dep: llnl.samrai(https://github.com/dekken/llnl.samrai)
   out: phare_amr
 
 - name: solver
   self: samrai
-  inc: src/solver
   src: src/solver
   out: phare_solver
 
-- name: test
+- name: pyphare
   self: samrai
-  inc: tests/amr/data/field/copy_pack
-  src: tests
-  dep: google.test
+  src: src/initializer/pyphare.cpp
+  out: pyphare
+  install: build/src/initializer
+  mod: lang.python3 lang.pybind11
+
+- name: simulator
+  self: solver
+  src: src/simulator
+  out: phare_simulator
   mod: lang.python3
-  link: $(python3-config --ldflags)
 
-- name: diagnostic
-  self: solver samrai
-  inc: src/diagnostic
-       subprojects/highfive/include
-       /usr/include/hdf5/serial
-  # src: src/diagnostic
-  out: phare_diagnostic
-
-- name: diagnostic_test
-  self: diagnostic
+- name: test
+  self: simulator
   inc: tests
   dep: google.test
-  test: tests/diagnostic/(\w).cpp
-  lib: hdf5_serial
+  main: tests/amr/messengers/test_messengers.cpp
+  lib: hdf5_mpich
   link: -pthread
+  mod: lang.python3
+  env: PYTHONPATH=${MKN_ROOT}/build:${MKN_ROOT}/tests/amr/messengers:${MKN_ROOT}/src/phare:${MKN_ROOT}/subprojects

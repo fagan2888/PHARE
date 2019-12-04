@@ -1,0 +1,29 @@
+{
+  "folders" : 
+  [
+    {
+      "path" : "."
+    }
+  ],
+  "settings" : 
+  {
+    "ClangFormat" : 
+    {
+      "binary" : "clang-format-8",
+      "format_on_save" : true,
+      "style" : "file"
+    },
+    "sublimegdb_executables" : 
+    {
+      "phare" : 
+      {
+        "commandline" : "gdb --interpreter=mi ./phare",
+        "env" : 
+        {
+          "LD_LIBRARY_PATH" : "/mkn/r/google/test/master/bin/build:/mkn/r/llnl/samrai/master/lib:/home/philix/git/phare/master/bin/init:/home/philix/git/phare/master/bin/core:/home/philix/git/phare/master/bin/samrai:/home/philix/git/phare/master/bin/solver:/home/philix/git/phare/master/bin/simulator"
+        },
+        "workingdir" : "${folder:${project_path:mkn.yaml}}/bin/test"
+      }
+    }
+  }
+}

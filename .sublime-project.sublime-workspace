@@ -1,0 +1,811 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "mkn.yaml",
+			"settings":
+			{
+				"buffer_size": 979,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/philix/git/phare/master",
+		"/home/philix/git/phare/master/src",
+		"/home/philix/git/phare/master/src/phare",
+		"/home/philix/git/phare/master/src/simulator",
+		"/home/philix/git/phare/master/src/solver",
+		"/home/philix/git/phare/master/src/solver/physical_models",
+		"/home/philix/git/phare/master/src/solver/solvers",
+		"/home/philix/git/phare/master/tests",
+		"/home/philix/git/phare/master/tests/amr",
+		"/home/philix/git/phare/master/tests/amr/messengers",
+		"/home/philix/git/phare/master/tests/amr/messengers/input",
+		"/home/philix/git/phare/master/tests/amr/models",
+		"/home/philix/git/phare/master/tests/core",
+		"/home/philix/git/phare/master/tests/core/data",
+		"/home/philix/git/phare/master/tests/core/data/particles",
+		"/home/philix/git/phare/master/tests/initializer"
+	],
+	"file_history":
+	[
+		"/home/philix/git/phare/master/tests/amr/messengers/test_messengers.cpp",
+		"/home/philix/git/phare/master/src/phare/job.py",
+		"/home/philix/git/phare/master/src/simulator/simulator.h",
+		"/home/philix/git/phare/master/src/solver/multiphysics_integrator.h",
+		"/home/philix/git/phare/master/src/amr/messengers/messenger_factory.h",
+		"/home/philix/git/phare/master/src/solver/physical_models/hybrid_model.h",
+		"/home/philix/git/phare/master/src/simulator/CMakeLists.txt",
+		"/home/philix/git/phare/master/src/phare/phare.cpp",
+		"/home/philix/git/phare/master/readme.md",
+		"/home/philix/git/phare/master/src/phare/phare.h",
+		"/home/philix/git/phare/diagnostics/mkn.yaml",
+		"/home/philix/git/phare/master/src/solver/CMakeLists.txt",
+		"/home/philix/git/phare/master/src/amr/messengers/hybrid_messenger.h",
+		"/home/philix/git/phare/master/src/amr/messengers/hybrid_hybrid_messenger_strategy.h",
+		"/home/philix/git/phare/master/tests/amr/resources_manager/resource_test_1d.cpp",
+		"/home/philix/git/phare/master/src/core/numerics/pusher/pusher.h",
+		"/home/philix/git/phare/master/src/core/numerics/pusher/boris.h",
+		"/home/philix/git/phare/master/src/core/data/ions/ion_population/ion_population.h",
+		"/home/philix/git/phare/master/src/solver/physical_models/mhd_model.h",
+		"/home/philix/git/phare/master/src/solver/solvers/solver_mhd.h",
+		"/home/philix/git/phare/master/src/solver/messenger_registration.h",
+		"/home/philix/git/phare/master/tests/initializer/CMakeLists.txt",
+		"/home/philix/git/phare/master/src/simulator/simulator.cpp",
+		"/home/philix/git/phare/master/src/solver/solvers/solver.h",
+		"/home/philix/git/phare/master/src/amr/data/field/field_overlap.h",
+		"/home/philix/git/phare/master/tests/amr/data/field/copy_pack/field_data_test_param.h",
+		"/home/philix/git/phare/master/tests/amr/resources_manager/CMakeLists.txt",
+		"/home/philix/git/phare/master/tests/core/data/particle_initializer/CMakeLists.txt",
+		"/home/philix/git/phare/master/tests/amr/models/CMakeLists.txt",
+		"/home/philix/git/phare/master/src/core/data/ions/particle_initializers/particle_initializer.h",
+		"/home/philix/git/phare/master/src/core/numerics/moments/moments.h",
+		"/home/philix/git/phare/master/src/amr/messengers/mhd_hybrid_messenger_strategy.h",
+		"/home/philix/git/phare/master/tests/amr/data/field/copy_pack/field_data_test_param.cpp",
+		"/home/philix/git/phare/master/src/core/data/electromag/electromag.h",
+		"/home/philix/git/phare/master/src/core/data/ions/particle_initializers/maxwellian_particle_initializer.h",
+		"/home/philix/git/phare/master/tests/amr/data/field/overlap/test_main.cpp",
+		"/home/philix/git/phare/master/src/amr/messengers/hybrid_messenger_strategy.h",
+		"/home/philix/git/phare/master/src/amr/data/field/coarsening/field_coarsen_index_weight.h",
+		"/home/philix/git/phare/master/CMakeLists.txt",
+		"/home/philix/git/phare/master/src/amr/data/particles/particles_data.h",
+		"/home/philix/git/phare/master/src/core/data/field/field.h",
+		"/home/philix/git/phare/master/src/phare/CMakeLists.txt",
+		"/home/philix/git/phare/master/src/initializer/subprojects/pybind11/CMakeLists.txt",
+		"/home/philix/git/phare/master/src/initializer/CMakeLists.txt",
+		"/home/philix/git/phare/master/src/core/data/grid/gridlayoutimplyee.h",
+		"/home/philix/git/phare/master/tests/amr/data/field/refine/test_tag_strategy.h",
+		"/home/philix/git/phare/master/src/amr/resources_manager/particle_resource.h",
+		"/home/philix/git/phare/master/tests/amr/data/particles/copy/test_main.cpp",
+		"/home/philix/git/phare/master/tests/amr/data/particles/copy_overlap/test_main.cpp",
+		"/home/philix/git/phare/master/src/amr/messengers/quantity_communicator.h",
+		"/home/philix/git/phare/master/tests/amr/data/field/coarsening/test_basic_hierarchy.h",
+		"/home/philix/git/phare/master/src/amr/resources_manager/field_resource.h",
+		"/home/philix/git/phare/master/src/amr/resources_manager/resources_manager_utilities.h",
+		"/home/philix/git/phare/master/src/core/data/grid/gridlayout.h",
+		"/home/philix/git/phare/master/src/amr/resources_manager/amr_utils.h",
+		"/home/philix/git/phare/master/src/amr/data/particles/refine/particles_data_split.h",
+		"/home/philix/git/phare/master/src/amr/data/field/field_data.h",
+		"/home/philix/git/phare/master/src/amr/data/field/refine/linear_weighter.h",
+		"/home/philix/git/phare/master/src/amr/data/field/refine/field_refiner.h",
+		"/home/philix/git/phare/master/src/amr/data/field/refine/field_linear_refine.h",
+		"/home/philix/git/phare/master/src/amr/data/field/coarsening/field_coarsener.h",
+		"/home/philix/git/phare/master/tests/amr/data/field/coarsening/test_linear_coarsen.h",
+		"/home/philix/git/phare/master/tests/amr/data/field/coarsening/test_main.cpp",
+		"/home/philix/git/phare/master/tests/amr/data/field/coarsening/test_weighter_coarsen.h",
+		"/home/philix/git/phare/master/tests/amr/data/field/coarsening/test_basic_hierarchy.cpp",
+		"/home/philix/git/phare/master/src/amr/data/field/time_interpolate/field_linear_time_interpolate.h",
+		"/home/philix/git/phare/master/src/amr/data/field/refine/field_refine_operator.h",
+		"/home/philix/git/phare/master/src/amr/data/field/coarsening/field_coarsen_operator.h",
+		"/home/philix/git/phare/master/src/solver/solvers/solver_ppc.h",
+		"/home/philix/git/phare/master/src/core/numerics/ohm/ohm.h",
+		"/home/philix/git/phare/master/src/core/numerics/interpolator/interpolator.h",
+		"/home/philix/git/phare/master/src/core/numerics/faraday/faraday.h",
+		"/home/philix/git/phare/master/src/core/numerics/ampere/ampere.h",
+		"/home/philix/git/phare/master/src/core/data/vecfield/vecfield_initializer.h",
+		"/home/philix/git/phare/master/src/core/models/hybrid_state.h",
+		"/home/philix/git/phare/master/src/core/data/ions/ions.h",
+		"/home/philix/git/phare/master/src/amr/messengers/hybrid_messenger_info.h",
+		"/home/philix/git/phare/master/src/core/utilities/partitionner/partitionner.h",
+		"/home/philix/git/phare/master/src/core/utilities/point/point.h",
+		"/home/philix/git/phare/master/tests/amr/messengers/test_tag_strategy.h",
+		"/home/philix/git/phare/master/tests/amr/data/field/geometry/test_main.cpp",
+		"/home/philix/git/phare/master/tests/amr/data/field/refine/test_basic_hierarchy.cpp",
+		"/home/philix/git/phare/master/tests/amr/data/field/refine/test_basic_hierarchy.h",
+		"/home/philix/git/phare/master/tests/amr/data/field/refine/test_main.cpp",
+		"/home/philix/git/phare/master/tests/amr/multiphysics_integrator/test_main.cpp",
+		"/home/philix/git/phare/master/tests/amr/data/field/variable/test_main.cpp",
+		"/home/philix/git/phare/master/tests/amr/data/particles/refine/test_basic_hierarchy.h",
+		"/home/philix/git/phare/master/src/amr/resources_manager/amr_utils.cpp",
+		"/home/philix/git/phare/master/tests/amr/data/field/time_interpolate/test_main.cpp",
+		"/home/philix/git/phare/master/tests/amr/data/particles/refine/test_main.cpp",
+		"/home/philix/git/phare/master/tests/amr/data/particles/refine/test_split.cpp",
+		"/home/philix/git/phare/master/tests/amr/data/particles/refine/test_tag_strategy.h",
+		"/home/philix/git/phare/master/.clang-format",
+		"/home/philix/git/phare/master/tests/amr/data/particles/schedule/test_basic_hierarchy.h",
+		"/home/philix/git/phare/master/tests/amr/data/particles/schedule/test_main.cpp",
+		"/home/philix/git/phare/master/tests/amr/data/particles/schedule/test_tag_strategy.h",
+		"/home/philix/git/phare/master/tests/amr/data/particles/stream_pack/test_main.cpp",
+		"/home/philix/git/phare/master/tests/amr/models/test_main.cpp",
+		"/home/philix/git/phare/master/src/amr/messengers/mhd_messenger.h",
+		"/home/philix/git/phare/master/src/solver/physical_models/physical_model.h",
+		"/home/philix/git/phare/master/tests/amr/resources_manager/resource_test_1d.h",
+		"/home/philix/git/phare/master/src/core/numerics/boundary_condition/boundary_condition.h",
+		"/home/philix/git/phare/master/src/core/utilities/particle_selector/particle_selector.h",
+		"/home/philix/git/phare/master/src/core/data/vecfield/vecfield.h",
+		"/home/philix/git/phare/master/src/core/data/grid/gridlayoutdefs.h",
+		"/home/philix/git/phare/master/src/core/data/ions/particle_initializers/particle_initializer_factory.h",
+		"/home/philix/git/phare/master/src/initializer/data_provider.cpp",
+		"/home/philix/git/phare/master/src/initializer/python_data_provider.h",
+		"/home/philix/git/phare/master/src/initializer/restart_data_provider.h",
+		"/home/philix/git/phare/master/src/core/data/particles/particle.h",
+		"/home/philix/git/phare/master/src/core/data/particles/particle_utilities.h",
+		"/home/philix/git/phare/master/src/amr/data/field/field_data_factory.h",
+		"/home/philix/git/phare/master/src/amr/data/field/field_geometry.h",
+		"/home/philix/git/phare/master/src/amr/data/field/field_variable.h",
+		"/home/philix/git/phare/master/src/amr/data/particles/refine/split.h",
+		"/home/philix/git/phare/master/tests/core/numerics/boundary_condition/test_main.cpp",
+		"/home/philix/git/phare/master/tests/core/data/vecfield/test_main.cpp",
+		"/home/philix/git/phare/master/src/initializer/pyphare.cpp",
+		"/home/philix/git/phare/master/src/initializer/python_data_provider.cpp",
+		"/home/philix/git/phare/master/src/core/data/ions/ion_population/particle_pack.h",
+		"/home/philix/git/phare/master/tests/core/data/gridlayout/gridlayout_allocsize.cpp",
+		"/home/philix/git/phare/master/src/amr/messengers/messenger.h",
+		"/home/philix/git/phare/master/tests/core/data/ion_population/test_main.cpp",
+		"/home/philix/git/phare/master/tests/core/data/gridlayout/gridlayout_allocsize.h",
+		"/home/philix/git/phare/master/tests/core/data/gridlayout/gridlayout_amr.cpp",
+		"/home/philix/git/phare/master/tests/core/data/gridlayout/gridlayout_base_params.h",
+		"/home/philix/git/phare/master/tests/core/data/gridlayout/gridlayout_utilities.h",
+		"/home/philix/git/phare/master/tests/core/data/gridlayout/gridlayout_cell_centered_coord.h"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"/home/philix/git/phare/master/",
+			"/home/philix/git/phare/master/tests",
+			"/home/philix/git/phare/master/test",
+			"/home/philix/git/phare/master/src/",
+			"/home/philix/git/phare/master/src/simulator",
+			"/home/philix/git/phare/master/src",
+			"/home/philix/git/phare/master/tests",
+			"/home/philix/git/phare/master/",
+			"/home/philix/git/phare/master/src",
+			"/home/philix/git/phare/master/",
+			"/home/philix/git/phare/master/tests",
+			"/home/philix/git/phare/master/",
+			"/home/philix/git/phare/master/src",
+			"/home/philix/git/phare/master/tests",
+			"/home/philix/git/phare/master/",
+			"/home/philix/git/phare/master/tests",
+			"/home/philix/git/phare/master/",
+			"/home/philix/git/phare/master/tests",
+			"/home/philix/git/phare/master/",
+			"/home/philix/git/phare/master/subprojects/googletest",
+			"/home/philix/git/phare/master/",
+			"/home/philix/git/phare/master/tests",
+			"/home/philix/git/phare/master/src",
+			"/home/philix/git/phare/master/",
+			"/home/philix/git/phare/master/tests",
+			"/home/philix/git/phare/master/src",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"initialize",
+			"max_nbr_levels",
+			"getModel_",
+			"registerMessengers_",
+			"messengerFactory_",
+			"HybridMessenger",
+			"createIonsDict",
+			"HybridModel",
+			"time_step",
+			"max_levels",
+			"max",
+			"Database",
+			"inputDatabase",
+			"inputDatabase_",
+			"BasicHierarchy",
+			"auto& hierarchy   = hierarchy_;",
+			"hierarchy.getPatchLevel",
+			"hierarchy.getNumberOfLevels",
+			"dict[\"simulation\"][\"AMR\"][\"max_nbr_levels\"]",
+			"              dict[\"simulation\"][\"AMR\"][\"max_nbr_levels\"]",
+			"HybridHybridT",
+			"IPhysicalModel",
+			"ResourcesManagerT",
+			"physical_model",
+			"HybridModelT",
+			"GridImplYee1D",
+			"solver",
+			"registerResources",
+			"electromag",
+			"ResourcesManager",
+			"ResourcesManagerT",
+			"integrator",
+			"integrator->",
+			"integrator",
+			"TagStrategy",
+			"TestIntegratorStrat",
+			"BasicHierarchy",
+			"basicHierarchy",
+			"HybridHybridT",
+			"cycle",
+			"clustering_",
+			"<<<<<<<",
+			"\"resources_manager/resources_manager_utilities.h\"",
+			"\"messengers/hybrid_hybrid_messenger_strategy.h\"",
+			"\"messengers/hybrid_messenger_strategy.h\"",
+			"#include \"numerics/moments/moments.h\"",
+			"#include \"numerics/interpolator/interpolator.h\"",
+			"#include \"messengers/hybrid_messenger_strategy.h\"",
+			"\"messengers/hybrid_messenger_strategy.h\"",
+			"\"data/field/field_overlap.h",
+			"\"models/hybrid_state.h\"",
+			"<utilities/range/range.h>",
+			"\"data/field/field_overlap.h\"",
+			"\"numerics/pusher/pusher.h\"",
+			"\"data/vecfield/vecfield_initializer.h\"",
+			"#include \"data/ions/particle_initializers/particle_initializer.h\"",
+			"\"data/ions/particle_initializers/particle_initializer.h\"",
+			"data/ions/particle_initializers/particle_initializer.h",
+			"#include \"data/field/field_overlap.h\"",
+			"physical_model.h",
+			"amr/data/field/coarsening/field_coarsen_index_weight.h",
+			"#include \"data/ions/ion_population/particle_pack.h\"",
+			"data/ndarray/ndarray_vector.h>",
+			"$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>",
+			"target_include_directories",
+			"#include \"data/field/coarsening/field_coarsen_index_weight.h\"",
+			"#include \"types/amr_types.h\"",
+			"#include \"utilities/algorithm.h\"",
+			"#include \"data/vecfield/vecfield_component.h\"",
+			"#include \"data/field/field_data.h\"",
+			"#include \"data/field/field_geometry.h\"",
+			"#include \"data/field/refine/field_refiner.h\"",
+			"#include \"data/field/refine/field_linear_refine.h\"",
+			"#include \"data/field/refine/field_refine_operator.h\"",
+			"#include \"data/field/field_variable.h\"",
+			"#include \"data/field/coarsening/field_coarsen_operator.h\"",
+			"#include \"data/field/time_interpolate/field_linear_time_interpolate.h\"",
+			"#include \"data/particles/refine/split.h\"",
+			"#include \"data/particles/particles_variable.h\"",
+			"#include \"utilities/constants.h\"",
+			"#include \"data/particles/refine/particles_data_split.h\"",
+			"#include \"data/particles/particles_data_factory.h\"",
+			"#include \"data/particles/particles_data.h\"",
+			"#include \"messengers/messenger_info.h\"",
+			"#include \"multiphysics_integrator.h\"",
+			"#include \"messengers/messenger_factory.h\"",
+			"#include \"solverp",
+			"#include \"physical_models/mhd_model.h\"",
+			"#include \"messengers/hybrid_messenger.h\"",
+			"#include \"resources_manager/amr_utils.h\"",
+			"#include \"solvers/solver_ppc.h\"",
+			"#include \"physical_models/hybrid_model.h\"",
+			"#include \"utilities/meta/meta_utilities.h\"",
+			"#include \"utilities/types.h\"",
+			"#include \"data/ions/ions.h\"",
+			"#include \"data/ions/ion_population/ion_population.h\"",
+			"#include \"data/ions/particle_initializers/maxwellian_particle_initializer.h\"",
+			"#include \"data/ions/particle_initializers/particle_initializer_factory.h\"",
+			"#include \"data/particles/particle_utilities.h\"",
+			"#include \"data/ndarray/ndarray_vector.h\"",
+			"#include \"numerics/ampere/ampere.h\"",
+			"#include \"numerics/faraday/faraday.h\"",
+			"#include \"data/particles/particle.h\"",
+			"#include \"hybrid/hybrid_quantities.h\"",
+			"#include <numerics/interpolator/interpolator.h>",
+			"#include \"utilities/range/range.h\"",
+			"#include \"numerics/pusher/pusher_factory.h\"",
+			"#include \"numerics/pusher/boris.h\"",
+			"#include \"numerics/boundary_condition/boundary_condition.h\"",
+			"#include \"utilities/point/point.h\"",
+			"#include \"utilities/partitionner/partitionner.h\"",
+			"#include \"utilities/particle_selector/particle_selector.h\"",
+			"#include \"utilities/box/box.h\"",
+			"#include \"numerics/ohm/ohm.h\"",
+			"#include \"utilities/index/index.h\"",
+			"#include \"data/grid/gridlayoutdefs.h\"",
+			"#include \"data/grid/gridlayout_impl.h\"",
+			"#include \"python_data_provider.h\"",
+			"#include \"restart_data_provider.h\"",
+			"#include \"data_provider.h\"",
+			"#include \"data/particles/particle_array.h\"",
+			"#include \"data/grid/gridlayoutimplyee.h\"",
+			"#include \"data/electromag/electromag.h\"",
+			"#include \"data/grid/gridlayout.h\"",
+			"#include \"data/field/field.h\"",
+			"#include \"data/vecfield/vecfield.h\"",
+			"#include \"resources_manager/resources_manager.h\"",
+			"#include \"messengers/messenger.h\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"auto& hierarchy   = *hierarchy_;",
+			"hierarchy->getPatchLevel",
+			"hierarchy->getNumberOfLevels",
+			"#include \"core/numerics/moments/moments.h\"",
+			"#include \"core/numerics/interpolator/interpolator.h\"",
+			"#include \"amr/messengers/hybrid_messenger_strategy.h\"",
+			"#include \"core/data/ions/particle_initializers/particle_initializer.h\"",
+			"#include \"amr/data/field/field_overlap.h\"",
+			"#include \"amr/data/field/coarsening/field_coarsen_index_weight.h\"",
+			"#include \"amr/types/amr_types.h\"",
+			"#include \"core/utilities/algorithm.h\"",
+			"#include \"core/data/vecfield/vecfield_component.h\"",
+			"#include \"amr/data/field/field_data.h\"",
+			"#include \"amr/data/field/field_geometry.h\"",
+			"#include \"amr/data/field/refine/field_refiner.h\"",
+			"#include \"amr/data/field/refine/field_linear_refine.h\"",
+			"#include \"amr/data/field/refine/field_refine_operator.h\"",
+			"#include \"amr/data/field/field_variable.h\"",
+			"#include \"amr/data/field/coarsening/field_coarsen_operator.h\"",
+			"#include \"amr/data/field/time_interpolate/field_linear_time_interpolate.h\"",
+			"#include \"amr/data/particles/refine/split.h\"",
+			"#include \"amr/data/particles/particles_variable.h\"",
+			"#include \"core/utilities/constants.h\"",
+			"#include \"amr/data/particles/refine/particles_data_split.h\"",
+			"#include \"amr/data/particles/particles_data_factory.h\"",
+			"#include \"amr/data/particles/particles_data.h\"",
+			"#include \"amr/messengers/messenger_info.h\"",
+			"#include \"solver/multiphysics_integrator.h\"",
+			"#include \"amr/messengers/messenger_factory.h\"",
+			"#include \"solver/physical_models/mhd_model.h\"",
+			"#include \"amr/messengers/hybrid_messenger.h\"",
+			"#include \"amr/resources_manager/amr_utils.h\"",
+			"#include \"solver/solvers/solver_ppc.h\"",
+			"#include \"solver/physical_models/hybrid_model.h\"",
+			"#include \"core/utilities/meta/meta_utilities.h\"",
+			"#include \"core/utilities/types.h\"",
+			"#include \"core/data/ions/ions.h\"",
+			"#include \"core/data/ions/ion_population/ion_population.h\"",
+			"#include \"core/data/ions/particle_initializers/maxwellian_particle_initializer.h\"",
+			"#include \"core/data/ions/particle_initializers/particle_initializer_factory.h",
+			"#include \"core/data/particles/particle_utilities.h\"",
+			"#include \"core/data/ndarray/ndarray_vector.h\"",
+			"#include \"core/numerics/ampere/ampere.h\"",
+			"#include \"core/numerics/faraday/faraday.h\"",
+			"#include \"core/data/particles/particle.h\"",
+			"#include \"core/hybrid/hybrid_quantities.h\"",
+			"#include \"core/numerics/interpolator/interpolator.h\"",
+			"#include \"core/utilities/range/range.h\"",
+			"#include \"core/numerics/pusher/pusher_factory.h\"",
+			"#include \"core/numerics/pusher/boris.h\"",
+			"#include \"core/numerics/boundary_condition/boundary_condition.h\"",
+			"#include \"core/utilities/point/point.h\"",
+			"#include \"core/utilities/partitionner/partitionner.h\"",
+			"#include \"core/utilities/particle_selector/particle_selector.h\"",
+			"#include \"core/utilities/box/box.h\"",
+			"#include \"core/numerics/ohm/ohm.h\"",
+			"#include \"core/utilities/index/index.h\"",
+			"#include \"core/data/grid/gridlayoutdefs.h\"",
+			"#include \"core/data/grid/gridlayout_impl.h\"",
+			"#include \"initializer/python_data_provider.h\"",
+			"#include \"initializer/restart_data_provider.h\"",
+			"#include \"initializer/data_provider.h\"",
+			"#include \"core/data/particles/particle_array.h\"",
+			"#include \"core/data/grid/gridlayoutimplyee.h\"",
+			"#include \"core/data/electromag/electromag.h\"",
+			"#include \"core/data/grid/gridlayout.h\"",
+			"#include \"core/data/field/field.h\"",
+			"#include \"core/data/vecfield/vecfield.h\"",
+			"#include \"amr/resources_manager/resources_manager.h\"",
+			"#include \"amr/messengers/messenger.h\"",
+			"#include \"solver/messenger_registration.h\"",
+			"#include \"core/models/hybrid_state.h\"",
+			"#include \"amr/resources_manager/resources_manager.h\"",
+			"#include \"core/data/ions/particle_initializers/particle_initializer_factory.h\"",
+			"#include \"solver/solvers/solver.h\"",
+			"#include \"amr/messengers/hybrid_messenger_info.h\"",
+			"#include \"core/models/mhd_state.h\"",
+			"#include \"amr/messengers/mhd_messenger_info.h\"",
+			"#include \"core/data/grid/gridlayout.h\"",
+			"#include \"solver/data/grid/gridlayout.h\"",
+			"#include \"core/data/grid/gridlayout.h\"",
+			"#include \"core/utilities/point/point.h\"",
+			"#include \"core/models/physical_state.h\"",
+			"#include \"core/hybrid/hybrid_quantities.h\"",
+			"#include \"core/data/grid/gridlayoutdefs.h\"",
+			"#include \"core/utilities/types.h\"",
+			"GTEST_LIBS",
+			"",
+			"$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>\n  ${GTEST_INCLUDE_DIRS}",
+			"$<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>\n  ${GTEST_INCLUDE_DIRS}",
+			"",
+			"PRIVATE\n  ${GTEST_INCLUDE_DIRS}",
+			"",
+			"  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>\n  ${GTEST_INCLUDE_DIRS}",
+			"$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>\n    ${GTEST_INCLUDE_DIRS}",
+			"${GTEST_LIBS}",
+			"${GTEST_INCLUDE_DIRS}",
+			"",
+			"${PHARE_GTEST_LIBS}",
+			"#include \"gmock/gmock.h\"",
+			"${GTEST_INCLUDE_DIRS}",
+			"",
+			"//#include \"gmock/gmock.h\"",
+			"",
+			"PHARE_TEST_C_FLAGS",
+			"PHARE_TEST_FLAGS",
+			".unregisterLevel(level);"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "mkn.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 979,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								249,
+								249
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 109.0
+	},
+	"pinned_build_system": "",
+	"project": ".sublime-project",
+	"replace":
+	{
+		"height": 71.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"hybr",
+				"src/solver/physical_models/hybrid_model.h"
+			],
+			[
+				"messenger",
+				"src/amr/messengers/messenger_factory.h"
+			],
+			[
+				"mul",
+				"src/solver/multiphysics_integrator.h"
+			],
+			[
+				"MessengerFactory",
+				"src/amr/messengers/messenger_factory.h"
+			],
+			[
+				"HybridModel",
+				"src/solver/physical_models/hybrid_model.h"
+			],
+			[
+				"hybrid_model.h",
+				"src/solver/physical_models/hybrid_model.h"
+			],
+			[
+				"multiphysInt",
+				"src/solver/multiphysics_integrator.h"
+			],
+			[
+				"field_data_test_param.cpp",
+				"tests/amr/data/field/copy_pack/field_data_test_param.cpp"
+			],
+			[
+				"field_data_test_param.h",
+				"tests/amr/data/field/copy_pack/field_data_test_param.h"
+			],
+			[
+				"data/ions/particle_initializers/particle_initializer.h",
+				"src/core/data/ions/particle_initializers/particle_initializer.h"
+			],
+			[
+				"field_overlap.h",
+				"src/amr/data/field/field_overlap.h"
+			],
+			[
+				"mhd_model.h",
+				"src/solver/physical_models/mhd_model.h"
+			],
+			[
+				"messengers/hybrid_messenger_strategy.h",
+				"src/amr/messengers/hybrid_messenger_strategy.h"
+			],
+			[
+				"messengers/messenger_factory.h",
+				"src/amr/messengers/messenger_factory.h"
+			],
+			[
+				"solver.h",
+				"src/solver/solvers/solver.h"
+			],
+			[
+				"field_coarsen_index_weight.h",
+				"src/amr/data/field/coarsening/field_coarsen_index_weight.h"
+			],
+			[
+				"utilities/point/point.h",
+				"src/core/utilities/point/point.h"
+			],
+			[
+				"tests/core/data/gridlayout/gridlayout_deriv.cpp",
+				"tests/core/data/gridlayout/gridlayout_deriv.cpp"
+			],
+			[
+				"data/gridlayout/gridlayout_deriv.cpp",
+				"tests/core/data/gridlayout/gridlayout_deriv.cpp"
+			],
+			[
+				"particles/stream_pack/test_main.cpp",
+				"tests/amr/data/particles/stream_pack/test_main.cpp"
+			],
+			[
+				"copy_overlap/test_main.cpp",
+				"tests/amr/data/particles/copy_overlap/test_main.cpp"
+			],
+			[
+				"data/particles/copy/test_main.cpp",
+				"tests/amr/data/particles/copy/test_main.cpp"
+			],
+			[
+				"core/data/ndarray/test_main.cpp",
+				"tests/core/data/ndarray/test_main.cpp"
+			],
+			[
+				"ndarray/test_main.cpp",
+				"tests/core/data/ndarray/test_main.cpp"
+			],
+			[
+				"core/utilities/range/test_main.cpp",
+				"tests/core/utilities/range/test_main.cpp"
+			],
+			[
+				"numerics/ampere/test_main.cpp",
+				"tests/core/numerics/ampere/test_main.cpp"
+			],
+			[
+				"core/utilities/index/test_main.cpp",
+				"tests/core/utilities/index/test_main.cpp"
+			],
+			[
+				"numerics/boundary_condition/test_main.cpp",
+				"tests/core/numerics/boundary_condition/test_main.cpp"
+			],
+			[
+				"data/ion_population/test_main.cpp",
+				"tests/core/data/ion_population/test_main.cpp"
+			],
+			[
+				"core/data/vecfield/test_main.cp",
+				"tests/core/data/vecfield/test_main.cpp"
+			],
+			[
+				"tests/core/data/ion_population/",
+				"tests/core/data/ion_population/CMakeLists.txt"
+			],
+			[
+				"data/vecfield/test_main.cpp",
+				"tests/core/data/vecfield/test_main.cpp"
+			],
+			[
+				"ion_population/test_main.cpp",
+				"tests/core/data/ion_population/test_main.cpp"
+			],
+			[
+				"tests/core/data/ndarray/test_main.cpp",
+				"tests/core/data/ndarray/test_main.cpp"
+			],
+			[
+				"gtest.cc",
+				"subprojects/googletest/googletest/src/gtest.cc"
+			],
+			[
+				"hyhy",
+				"src/amr/messengers/hybrid_hybrid_messenger_strategy.h"
+			],
+			[
+				"",
+				"tests/amr/messengers/test_tag_strategy.h"
+			],
+			[
+				"diagtagstrate",
+				"tests/amr/data/field/coarsening/test_tag_strategy.h"
+			],
+			[
+				"split",
+				"src/amr/data/particles/refine/split.h"
+			],
+			[
+				"/SAMRAI/tbox/AsyncCommPeer.h",
+				"subprojects/samrai/source/SAMRAI/tbox/AsyncCommPeer.h"
+			],
+			[
+				"particles",
+				"src/amr/data/particles/particles_data.h"
+			],
+			[
+				"nd",
+				"src/core/data/ndarray/ndarray_vector.h"
+			],
+			[
+				"ions",
+				"src/core/data/ions/ions.h"
+			],
+			[
+				"dbg.h",
+				"mkn/kul/master/inc/kul/dbg.hpp"
+			],
+			[
+				"field",
+				"src/core/data/field/field.h"
+			],
+			[
+				"field/copy_pack/stream_pack/CMakeLists.txt ",
+				"tests/amr/data/field/copy_pack/stream_pack/CMakeLists.txt"
+			],
+			[
+				"stream_pack/CMakeLists.txt",
+				"tests/amr/data/particles/stream_pack/CMakeLists.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 1307.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 276.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
