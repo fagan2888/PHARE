@@ -1,12 +1,13 @@
-#! clean build -dtOg 0 -W 9
+#! clean build -dtOg 0 -W 9 -p @,test_*
 
 name: phare
-self: simulator pyphare
+self: diagnostic pyphare
+scm: https://github.com/dekken/phare
+version: rm_code
 
 profile:
 - name: init
-  inc: src
-       subprojects
+  inc: src subprojects
   src: src/initializer/(.*_provider.*).cpp
   dep: lang.pybind11 mkn.kul
   mod: lang.python3
@@ -41,12 +42,32 @@ profile:
   out: phare_simulator
   mod: lang.python3
 
-- name: test
+- name: diagnostic
   self: simulator
-  inc: tests
-  dep: google.test
-  main: tests/amr/messengers/test_messengers.cpp
+  dep: hpc.highfive(https://github.com/dekken/hpc.highfive)
+  inc: /usr/include/hdf5/mpich
+  out: phare_diagnostic
   lib: hdf5_mpich
+
+- name: test
+  self: diagnostic
+  inc: . /usr/include/hdf5/mpich
+  dep: google.test hpc.highfive(https://github.com/dekken/hpc.highfive)
   link: -pthread
   mod: lang.python3
-  env: PYTHONPATH=${MKN_ROOT}/build:${MKN_ROOT}/tests/amr/messengers:${MKN_ROOT}/src/phare:${MKN_ROOT}/subprojects
+
+- name: test_messengers
+  parent: test
+  main: tests/amr/messengers/test_messengers.cpp
+  env: PYTHONPATH=${MKN_ROOT}/build:${MKN_ROOT}/build/tests/amr/messengers:${MKN_ROOT}/src/phare:${MKN_ROOT}
+
+- name: test_periodicity
+  parent: test
+  main: tests/amr/periodicity/test_main.cpp
+  env: PYTHONPATH=${MKN_ROOT}/build:${MKN_ROOT}/build/tests/amr/periodicity:${MKN_ROOT}/src/phare:${MKN_ROOT}
+
+- name: test_diagnostics
+  parent: test
+  main: tests/diagnostic/test_main.cpp
+  env: PYTHONPATH=${MKN_ROOT}/build:${MKN_ROOT}/build/tests/diagnostic:${MKN_ROOT}/src/phare:${MKN_ROOT}
+
