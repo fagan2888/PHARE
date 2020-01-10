@@ -258,6 +258,7 @@ public:
     virtual void advance()       = 0;
     virtual std::string to_str() = 0;
     virtual ~ISimulator() {}
+    virtual void dumpDiagnostics() = 0;
 };
 
 
@@ -418,7 +419,11 @@ public:
 
     auto getNumberOfLevels() const { return hierarchy_->getNumberOfLevels(); }
 
-    void dumpDiagnostics() { dMan->dump(); }
+    void dumpDiagnostics() override
+    {
+        if (dMan)
+            dMan->dump();
+    }
 
 private:
     auto find_model(std::string name)

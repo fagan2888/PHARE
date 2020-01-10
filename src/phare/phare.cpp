@@ -82,6 +82,7 @@ int main(int argc, char** argv)
     std::cout << PHARE::core::to_str(*simulator) << "\n";
 
     simulator->initialize();
+    simulator->dumpDiagnostics(); // move to per timestep?
 
     //
     // auto time = simulator.startTime();

@@ -104,6 +104,7 @@ DiagnosticsManager<Writer>::addDiagDict(PHARE::initializer::PHAREDict& dict)
     dao.start_iteration = dict["start_iteration"].template to<std::size_t>();
     dao.last_iteration  = dict["last_iteration"].template to<std::size_t>();
     dao.subtype         = dict["subtype"].template to<std::string>();
+
     return *this;
 }
 

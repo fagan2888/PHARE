@@ -159,7 +159,7 @@ private:
     std::unordered_map<std::string, std::shared_ptr<Hi5DiagnosticWriter<This>>> writers{
         {"fluid", make_writer<FluidDiagnosticWriter<This>>()},
         {"electromag", make_writer<ElectromagDiagnosticWriter<This>>()},
-        {"particles", make_writer<ParticlesDiagnosticWriter<This>>()}};
+        {"particle", make_writer<ParticlesDiagnosticWriter<This>>()}};
 
     template<typename Writer>
     std::shared_ptr<Hi5DiagnosticWriter<This>> make_writer()
@@ -303,9 +303,12 @@ void HighFiveDiagnostic<ModelView>::writeAttributesPerMPI(std::string path, std:
     for (const auto& [keyPath, value] : pathValues)
     {
         if (!keyPath.empty())
+        {
+            H5Easy::detail::createGroupsToDataSet(hi5_.file_, keyPath + "/dataset");
             hi5_.file_.getGroup(keyPath)
                 .template createAttribute<Data>(key, HighFive::DataSpace::From(value))
                 .write(value);
+        }
     }
 }
 
