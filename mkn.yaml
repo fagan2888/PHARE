@@ -1,9 +1,9 @@
-#! clean build -dtOg 0 -W 9
+#! clean build -dtOg 0 -p @,test_* -x mpi run
 
 name: phare
-self: diagnostic pyphare
+self: simulator pyphare
 scm: https://github.com/dekken/phare
-version: rm_code
+version: pydiag_plus_sim
 
 profile:
 - name: init
@@ -30,26 +30,33 @@ profile:
   out: phare_solver
 
 - name: pyphare
-  self: samrai
+  self: init
   src: src/initializer/pyphare.cpp
   out: pyphare
   install: build/phare
   mod: lang.python3 lang.pybind11
 
-- name: simulator
-  self: solver
-  src: src/simulator
-  out: phare_simulator
-  mod: lang.python3
-
 - name: diagnostic
-  self: simulator
+  self: solver
   dep: hpc.highfive(https://github.com/dekken/hpc.highfive)
   inc: /usr/include/hdf5/mpich
   out: phare_diagnostic
   lib: hdf5_mpich
 
+- name: simulator
+  self: diagnostic
+  src: src/simulator
+  out: phare_simulator
+  mod: lang.python3
+
+- name: exe
+  self: simulator
+  main: src/phare/phare.cpp
+  mod: lang.python3
+  env: PYTHONPATH=${MKN_ROOT}/build/tests/diagnostic:${MKN_ROOT}/build
+
 - name: test
+  inc: .
   self: diagnostic
   dep: google.test
   link: -pthread
@@ -70,3 +77,7 @@ profile:
   main: tests/diagnostic/test_main.cpp
   env: PYTHONPATH=${MKN_ROOT}/build/tests/diagnostic:${MKN_ROOT}/build
 
+- name: test_simulator
+  parent: test
+  main: tests/simulator/initialize.cpp
+  env: PYTHONPATH=${MKN_ROOT}/build/tests/simulator:${MKN_ROOT}/build
